@@ -11,7 +11,7 @@ public:
 
 int main(int argc, char *argv[])
 {
-    cout << "* Create Object base" << endl;
+    cout << "hi" << endl;
     Base base;
 
     return 0;
