@@ -11,7 +11,7 @@ public:
 
 int main(int argc, char *argv[])
 {
-    cout << "hi" << endl;
+    cout << "fnggggg" << endl;
     Base base;
 
     return 0;
