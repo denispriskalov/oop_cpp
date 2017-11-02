@@ -1,44 +1,14 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
-
-class Base
-{
-public:
-    Base() { cout << "Construct Base object\n"; }
-    ~Base() { cout << "Destruct Base object\n"; }
-
-    virtual void func() const { cout << "Function func() of class Base\n"; }
-};
-
-class Child: public Base
-{
-public:
-    Child() { cout << "Construct Child object\n"; }
-    ~Child() { cout << "Destruct Child object\n"; }
-
-    void func() const { cout << "Function func() of class Child\n"; }
-};
-
-void Function(const Base &obj)
-{
-    cout << "* Call method func() for object obj" << endl;
-    obj.func();
-}
-
-int main(int argc, char *argv[])
-{
-    cout << "* Create Object base" << endl;
-    Base base;
-
-    cout << "* Create Object child" << endl;
-    Child child;
-
-    cout << "* Call method func() for object base" << endl;
-    Function(base);
-
-    cout << "* Call method func() for object child" << endl;
-    Function(child);
+float volume(float r)
+{const float pi=3.14; return 4.0/3*pi*pow(r,3);}
+int main()
+{ float r1,r2,r3,z;
+cout<<"enter r1 r2 r3"<<endl;
+cin>>r1>>r2>>r3;
+z=(volume(r1)+volume(r2)+volume(r3))/3;
+cout<<"z="<<z<<endl;
 
     return 0;
 }
