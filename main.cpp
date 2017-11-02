@@ -1,25 +1,13 @@
 #include <iostream>
-
+#include <iomanip>
+#include <math.h>
 using namespace std;
 
-class Base
-{
-public:
-    Base() { cout << "Construct Base object\n"; }
-    ~Base() { cout << "Destruct Base object\n"; }
-};
 
-class Child: public Base
-{
-public:
-    Child() { cout << "Construct Child object\n"; }
-    ~Child() { cout << "Destruct Child object\n"; }
-};
 
-int main(int argc, char *argv[])
-{
-    cout << "* Create Object child" << endl;
-    Child child;
-
+int main()
+{ int x=10; double y;
+y=(pow(x,2)+sin(x+1))/25;
+cout<<"y="<<y<<endl;
     return 0;
 }
